@@ -7,6 +7,7 @@ Vacuna::Vacuna(std::string nombre, std::string pais, int dosis) {
     this->nombre = nombre;
     this->pais = pais;
     this->dosis = dosis;
+    this->patogeno_asociado = nullptr;
 }
 
 void Vacuna::mostrar() const {
@@ -21,11 +22,11 @@ void Vacuna::mostrar() const {
     }
 }
 
-std::string Vacuna::get_nombre() {
+std::string Vacuna::get_nombre() const {
     return this->nombre;
 }
 
-std::string Vacuna::get_pais() {
+std::string Vacuna::get_pais() const {
     return this->pais;
 }
 

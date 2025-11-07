@@ -15,9 +15,9 @@ private:
 public:
     Vacuna(std::string nombre, std::string pais, int dosis);
     void mostrar() const;
-    std::string get_nombre();
-    std::string get_pais();
-    int get_dosis();
+    std::string get_nombre() const;
+    std::string get_pais() const;
+    int get_dosis() const;
     void asociar_patogeno(Patogeno* patogeno);
     Patogeno* get_patogeno_asociado() const;
 };
