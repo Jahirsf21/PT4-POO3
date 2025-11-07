@@ -279,6 +279,7 @@ void estadisticas() {
     std::cout << "4. Ultima vacuna\n";
     std::cout << "5. Paises con vacunas por patogeno\n";
     std::cout << "6. salir \n";
+    std::cout << "Ingrese una opcion: ";
     std::string entrada;
     std::getline(std::cin, entrada);
     int opcion;
